@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/access/AccessControl.sol";
@@ -17,8 +17,8 @@ contract Evm721Starter is ERC721, AccessControl {
     Counters.Counter internal nextId;
 
     uint256 public constant MAX_SUPPLY = 10000;
-    uint256 public price = 0.001 ether;
-    string public baseUri = "https://bafkreifyb5jetemu2qf2pbid7246kvsumzsqim5z3jabr5zrb3fukh35ki.ipfs.nftstorage.link";
+    uint256 public price = 0.01 ether;
+    string public baseUri = "https://ipfs.io/ipfs/QmYpB5zWsmXyGan3FJuAWpCydDMBpdxnTBF5GzoAbyMvFQ?filename=photo_2022-01-20_22-27-04.jpg";
 
     bytes32 public constant ADMIN_ROLE = keccak256("ADMIN_ROLE");
     bytes32 public constant AIRDROPPER_ROLE = keccak256("AIRDROPPER_ROLE");
